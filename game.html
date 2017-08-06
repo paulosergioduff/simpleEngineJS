@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="video/principal.css">
+	<title></title>
+
+	<style>
+	
+		#info {
+			position	: absolute;
+			top		: 0px;
+			width		: 100%;
+			padding		: 5px;
+			text-align	: center;
+		}
+		#info a {
+			color		: #66F;
+			text-decoration	: none;
+		}
+		#info a:hover {
+			text-decoration	: underline;
+		}
+		#touchArea {
+			position: fixed;
+			width		: 100%;
+			height		: 100%;
+			overflow	: hidden;
+			padding		: 0;
+			margin		: 0;
+			-webkit-user-select	: none;
+			-moz-user-select	: none;
+			z-index: 9999;
+		}
+		</style>
+</head>
+<body bgcolor="black">
+<div id="cenario">
+
+</div>
+<div id="touchArea">
+
+
+<div id="camera"></div>
+
+<div class="channelSound" id="channelSound">
+		<audio controls autoplay loop><source src="sound/channel1/CORNER.ogg" type="audio/ogg"></audio>
+</div>
+
+<div id="desenhaJogadorInicial"></div>
+<div id="desenhaJogador"></div>
+
+<div id="jogador">
+</div>
+<div id="i.a." ></div>
+<div id="horizontal"></div>
+<div id="fim"></div>
+
+<div id="objeto">
+</div>
+<div id="objeto2">
+</div>
+
+<div class="debug">
+		<div id="cursor">
+			<div id="cursorV"></div>
+			<div id="cursorH"></div>
+		</div>
+
+		<div id="alertaColisao">
+			<div id="colisaoEsquerda"></div>
+			<div id="colisaoDireita"></div>
+		</div>
+
+		<div id="coordenadas" style="position: fixed; right: 0px; bottom: 0px" class="debug">
+			<div id="inicioColisaoE"></div>
+			<div id="fimColisaoE"></div>
+			<div id="inicioColisaoD"></div>
+			<div id="fimColisaoD"></div>
+			<div id="colisaoCima"></div>
+			<div id="colisaoBaixo">
+		</div>
+
+		
+</div>
+
+
+		<div id="info">
+		<center>
+			<span id="result"></span>
+			<div id="direita"></div>
+			<div id="esquerda"></div>
+			<div id="cima"></div>
+			<div id="baixo"></div>
+		</center>
+		</div>
+
+</div> 
+
+
+
+<script type="text/javascript" src="controller/teclado.js"></script>
+<script type="text/javascript" src="controller/controlador.js"></script>
+<script type="text/javascript" src="controller/virtualjoystick.js"></script>
+<script type="text/javascript" src="controller/driveJoystickTouch.js"></script>
+
+
+
+
+<script type="text/javascript" src="software/jogador.js"></script>
+<script type="text/javascript" src="software/I.A.js"></script>
+<script type="text/javascript" src="software/objeto.js"></script>
+<script type="text/javascript" src="software/objeto2.js"></script>
+<script type="text/javascript" src="software/colisao.js"></script>
+
+<script type="text/javascript" src="video/video.js"></script>
+<script type="text/javascript" src="video/cenario.js"></script>
+
+<script type="text/javascript">
+
+		//desenhaJogadorInicial();
+		desenhaNaTela();
+		desenhaObjeto();
+		desenhaObjeto2();
+
+
+					
+		</script>
+
+
+</body>
+</html>

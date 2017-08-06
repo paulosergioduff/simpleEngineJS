@@ -1,0 +1,55 @@
+	.jogador{
+		border-style: solid;
+		border-color: red;
+
+		}
+	.objeto{
+		border-style: solid; 
+		border-color: green;
+	}
+
+	.objeto2{
+		border-style: solid; border-color: red;
+	}
+
+	.parede1{
+		top: 10%;
+		left: 20%;
+		position: absolute;
+		/*zoom: 300%;*/
+	}
+	
+
+	#alvo{
+		height: 10px;
+		width: 10px;
+		border-radius: 10px;
+		background-color: red;
+		border-style: solid;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		z-index: 9999;
+	}
+
+	.debug{
+		display: none;
+		color: white;
+		background-color: black;
+	}
+
+	.channelSound
+	{
+		display: none;
+	}
+
+	#camera{
+		position: fixed;
+		border-style: solid;
+		border-color: red;
+		width: 90%;
+		height: 90%;
+		top: 5%;
+		left: 5%;
+		z-index: 9999
+	}

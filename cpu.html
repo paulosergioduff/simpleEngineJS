@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function registrador($memoria)
+			{
+				sessionStorage.setItem("RegistroA",$memoria)
+			}
+		function pegaValor()
+			{
+				var mensagem = window.document.getElementById('valor').value;
+				registrador(mensagem);
+				alert(mensagem);
+			}
+		function exibeValor()
+			{
+				var registro = sessionStorage.getItem("RegistroA");
+				alert(registro);
+			}
+	</script>
+</head>
+<body>
+<input type="text" id="valor"><button onclick="pegaValor()">Pegar Valor</button><br>
+<button onclick="exibeValor()">Mostra Valor</button>
+
+</body>
+</html>
